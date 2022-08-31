@@ -4,6 +4,8 @@
   "description": "An sleeker package",
   "main": "index.js",
   "scripts": {
+      "sass-dev": "sass --watch --update --style=expanded src/:",
+      "sass-build": "sass --no-source-map --style=compressed src/:",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/hamidkd/sleeker/issues"
   },
-  "homepage": "https://github.com/hamidkd/sleeker#readme"
+  "homepage": "https://github.com/hamidkd/sleeker#readme",
+  "devDependencies": {
+    "sass": "^1.54.7"
+  }
 }
