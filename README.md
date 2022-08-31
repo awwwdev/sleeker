@@ -3,7 +3,7 @@
 ## Setup:
 
 import 'sleeker/variables.css'
-‍import 'sleeker/classes.css'
+‍import 'sleeker/utility-classes.css'
 
 ## Documentation: 
 
