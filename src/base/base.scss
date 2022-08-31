@@ -1,0 +1,72 @@
+@use 'reset';
+@use 'typography';
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+#__next {
+  isolation: isolate;
+  max-width: 100vw;
+  /* height: 100%; cause the sticky navbar hides after a certain point. */
+  height: auto; 
+  /* since height:100% can not be used, min-heigh: 100vh is used to achieve almost the same thing.. */
+  min-height: 100vh;
+  /* set to 120vh to avoid layout shift because of appreance of scrollbard when going from one page to onther and also avoid footer flash when website is loading */
+  display: grid;
+  grid-template-areas:
+    'navbar'
+    'main'
+    'footer';
+  grid-template-rows: auto 1fr auto;
+}
+
+// ============================================================
+// SCROLL BARS 
+// ============================================================
+
+* {
+  /* Customizing scrollbar for firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-background-color);
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-background-color);
+}
+
+/* Customizing scrollbar for chrome */
+*::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  margin: 2rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-background-color);
+  border-radius: var(--border-radius--pill);
+  margin: 0 0.2rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: var(--border-radius--pill);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body::selection {
+  color: var(--text-color-inverse);
+  /* 🚧 change to a shade of primary color */
+  background: var(--clr-primary-4);
+}

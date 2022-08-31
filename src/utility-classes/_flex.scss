@@ -1,0 +1,26 @@
+
+.flex { display: flex; }
+
+.row { flex-direction: row; }
+.row.reverse,
+.row-reverse { flex-direction: row-reverse; }
+.column { flex-direction: column; }
+.column.reverse,
+.column-reverse { flex-direction: column-reverse; }
+
+.wrap { flex-wrap: wrap; }
+.nowrap { flex-wrap: nowrap; }
+
+.j\:start { justify-content: flex-start; }
+.j\:end { justify-content: flex-end; }
+.j\:center { justify-content: center; }
+.j\:space-between { justify-content: space-between; }
+.j\:space-around { justify-content: space-around; }
+.j\:space-evenly { justify-content: space-evenly; }
+
+.a\:start { align-items: flex-start; }
+.a\:end { align-items: flex-end; }
+.a\:center { align-items: center; }
+.a\:baseline { align-items: baseline; }
+.a\:stretch { align-items: stretch; }
+

@@ -1,0 +1,15 @@
+:root {
+  /* ☀️🌘 HANDLING DARK AND LIGHT */
+  --ON: initial;
+  --OFF: ;
+}
+
+.theme\:light {
+  --light: var(--ON);
+  --dark: var(--OFF);
+}
+
+.theme\:dark {
+  --light: var(--OFF);
+  --dark: var(--ON);
+}

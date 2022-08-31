@@ -1,0 +1,39 @@
+
+.bold { font-weight: 700; }
+.thin { font-weight: 300; }
+
+.bolder { font-weight: bolder; }
+.thinner { font-weight: lighter; }
+
+.fw\:50 { font-weight: 50; }
+.fw\:100 { font-weight: 100; }
+.fw\:200 { font-weight: 200; }
+.fw\:300 { font-weight: 300; }
+.fw\:400 { font-weight: 400; }
+.fw\:500 { font-weight: 500; }
+.fw\:600 { font-weight: 600; }
+.fw\:700 { font-weight: 700; }
+.fw\:800 { font-weight: 800; }
+.fw\:850 { font-weight: 850; }
+.fw\:900 { font-weight: 900; }
+.fw\:950 { font-weight: 950; }
+.fw\:1000 { font-weight: 1000; }
+
+
+
+.ls\:xs { letter-spacing: -0.04em; }
+.ls\:s { letter-spacing: -0.02em; }
+.ls { letter-spacing: 0; }
+.ls\:l { letter-spacing: 0.02em; }
+.ls\:xl { letter-spacing: 0.04em; }
+
+
+.fs { font-size: var(--font-size); }
+
+.fs\:s { font-size: var(--font-size--s); }
+.fs\:xs { font-size: var(--font-size--xs); }
+.fs\:2xs { font-size: var(--font-size--2xs); }
+
+.fs\:l { font-size: var(--font-size--s); }
+.fs\:xl { font-size: var(--font-size--xl); }
+.fs\:2xl { font-size: var(--font-size--2xl); }
