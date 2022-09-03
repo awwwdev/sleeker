@@ -1,0 +1,50 @@
+@mixin create-utility-classes ($class, $property, $variable) {
+  .#{class} {
+    #{$property} : var(--#{$variable})
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i} {
+      #{$property} : var(#{$variable}-#{$i})
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i}a {
+      #{$property} : var(#{$variable}-a-#{$i})
+    }
+  }
+}
+
+@include create-utility-classes ($class: br\:white, $property: border-color, $variable: --white);
+@include create-utility-classes ($class: br\:black, $property: border-color, $variable: --black);
+
+@include create-utility-classes ($class: br\:gray, $property: border-color, $variable: --gray);
+@include create-utility-classes ($class: br\:mauve, $property: border-color, $variable: --mauve);
+@include create-utility-classes ($class: br\:slate, $property: border-color, $variable: --slate);
+@include create-utility-classes ($class: br\:sage, $property: border-color, $variable: --sage);
+@include create-utility-classes ($class: br\:olive, $property: border-color, $variable: --olive);
+@include create-utility-classes ($class: br\:sand, $property: border-color, $variable: --sand);
+
+@include create-utility-classes ($class: br\:gold, $property: border-color, $variable: --gold);
+@include create-utility-classes ($class: br\:bronze, $property: border-color, $variable: --bronze);
+
+@include create-utility-classes ($class: br\:tomato, $property: border-color, $variable: --tomato);
+@include create-utility-classes ($class: br\:red, $property: border-color, $variable: --red);
+@include create-utility-classes ($class: br\:crimson, $property: border-color, $variable: --crimson);
+@include create-utility-classes ($class: br\:pink, $property: border-color, $variable: --pink);
+@include create-utility-classes ($class: br\:plum, $property: border-color, $variable: --plum);
+@include create-utility-classes ($class: br\:purple, $property: border-color, $variable: --purple);
+@include create-utility-classes ($class: br\:violet, $property: border-color, $variable: --violet);
+@include create-utility-classes ($class: br\:indigo, $property: border-color, $variable: --indigo);
+@include create-utility-classes ($class: br\:blue, $property: border-color, $variable: --blue);
+@include create-utility-classes ($class: br\:cyan, $property: border-color, $variable: --cyan);
+@include create-utility-classes ($class: br\:teal, $property: border-color, $variable: --teal);
+@include create-utility-classes ($class: br\:green, $property: border-color, $variable: --green);
+@include create-utility-classes ($class: br\:grass, $property: border-color, $variable: --grass);
+@include create-utility-classes ($class: br\:orange, $property: border-color, $variable: --orange);
+@include create-utility-classes ($class: br\:brown, $property: border-color, $variable: --brown);
+@include create-utility-classes ($class: br\:sky, $property: border-color, $variable: --sky);
+@include create-utility-classes ($class: br\:mint, $property: border-color, $variable: --mint);
+@include create-utility-classes ($class: br\:lime, $property: border-color, $variable: --lime);
+@include create-utility-classes ($class: br\:amber, $property: border-color, $variable: --amber);

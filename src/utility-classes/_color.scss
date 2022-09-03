@@ -1,0 +1,50 @@
+@mixin create-utility-classes ($class, $property, $variable) {
+  .#{class} {
+    #{$property} : var(--#{$variable})
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i} {
+      #{$property} : var(#{$variable}-#{$i})
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i}a {
+      #{$property} : var(#{$variable}-a-#{$i})
+    }
+  }
+}
+
+@include create-utility-classes ($class: clr\:white, $property: color, $variable: --white);
+@include create-utility-classes ($class: clr\:black, $property: color, $variable: --black);
+
+@include create-utility-classes ($class: clr\:gray, $property: color, $variable: --gray);
+@include create-utility-classes ($class: clr\:mauve, $property: color, $variable: --mauve);
+@include create-utility-classes ($class: clr\:slate, $property: color, $variable: --slate);
+@include create-utility-classes ($class: clr\:sage, $property: color, $variable: --sage);
+@include create-utility-classes ($class: clr\:olive, $property: color, $variable: --olive);
+@include create-utility-classes ($class: clr\:sand, $property: color, $variable: --sand);
+
+@include create-utility-classes ($class: clr\:gold, $property: color, $variable: --gold);
+@include create-utility-classes ($class: clr\:bronze, $property: color, $variable: --bronze);
+
+@include create-utility-classes ($class: clr\:tomato, $property: color, $variable: --tomato);
+@include create-utility-classes ($class: clr\:red, $property: color, $variable: --red);
+@include create-utility-classes ($class: clr\:crimson, $property: color, $variable: --crimson);
+@include create-utility-classes ($class: clr\:pink, $property: color, $variable: --pink);
+@include create-utility-classes ($class: clr\:plum, $property: color, $variable: --plum);
+@include create-utility-classes ($class: clr\:purple, $property: color, $variable: --purple);
+@include create-utility-classes ($class: clr\:violet, $property: color, $variable: --violet);
+@include create-utility-classes ($class: clr\:indigo, $property: color, $variable: --indigo);
+@include create-utility-classes ($class: clr\:blue, $property: color, $variable: --blue);
+@include create-utility-classes ($class: clr\:cyan, $property: color, $variable: --cyan);
+@include create-utility-classes ($class: clr\:teal, $property: color, $variable: --teal);
+@include create-utility-classes ($class: clr\:green, $property: color, $variable: --green);
+@include create-utility-classes ($class: clr\:grass, $property: color, $variable: --grass);
+@include create-utility-classes ($class: clr\:orange, $property: color, $variable: --orange);
+@include create-utility-classes ($class: clr\:brown, $property: color, $variable: --brown);
+@include create-utility-classes ($class: clr\:sky, $property: color, $variable: --sky);
+@include create-utility-classes ($class: clr\:mint, $property: color, $variable: --mint);
+@include create-utility-classes ($class: clr\:lime, $property: color, $variable: --lime);
+@include create-utility-classes ($class: clr\:amber, $property: color, $variable: --amber);

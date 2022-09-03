@@ -1,0 +1,50 @@
+@mixin create-utility-classes ($class, $property, $variable) {
+  .#{class} {
+    #{$property} : var(--#{$variable})
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i} {
+      #{$property} : var(#{$variable}-#{$i})
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .#{$class}#{$i}a {
+      #{$property} : var(#{$variable}-a-#{$i})
+    }
+  }
+}
+
+@include create-utility-classes ($class: bg\:white, $property: background-color, $variable: --white);
+@include create-utility-classes ($class: bg\:black, $property: background-color, $variable: --black);
+
+@include create-utility-classes ($class: bg\:gray, $property: background-color, $variable: --gray);
+@include create-utility-classes ($class: bg\:mauve, $property: background-color, $variable: --mauve);
+@include create-utility-classes ($class: bg\:slate, $property: background-color, $variable: --slate);
+@include create-utility-classes ($class: bg\:sage, $property: background-color, $variable: --sage);
+@include create-utility-classes ($class: bg\:olive, $property: background-color, $variable: --olive);
+@include create-utility-classes ($class: bg\:sand, $property: background-color, $variable: --sand);
+
+@include create-utility-classes ($class: bg\:gold, $property: background-color, $variable: --gold);
+@include create-utility-classes ($class: bg\:bronze, $property: background-color, $variable: --bronze);
+
+@include create-utility-classes ($class: bg\:tomato, $property: background-color, $variable: --tomato);
+@include create-utility-classes ($class: bg\:red, $property: background-color, $variable: --red);
+@include create-utility-classes ($class: bg\:crimson, $property: background-color, $variable: --crimson);
+@include create-utility-classes ($class: bg\:pink, $property: background-color, $variable: --pink);
+@include create-utility-classes ($class: bg\:plum, $property: background-color, $variable: --plum);
+@include create-utility-classes ($class: bg\:purple, $property: background-color, $variable: --purple);
+@include create-utility-classes ($class: bg\:violet, $property: background-color, $variable: --violet);
+@include create-utility-classes ($class: bg\:indigo, $property: background-color, $variable: --indigo);
+@include create-utility-classes ($class: bg\:blue, $property: background-color, $variable: --blue);
+@include create-utility-classes ($class: bg\:cyan, $property: background-color, $variable: --cyan);
+@include create-utility-classes ($class: bg\:teal, $property: background-color, $variable: --teal);
+@include create-utility-classes ($class: bg\:green, $property: background-color, $variable: --green);
+@include create-utility-classes ($class: bg\:grass, $property: background-color, $variable: --grass);
+@include create-utility-classes ($class: bg\:orange, $property: background-color, $variable: --orange);
+@include create-utility-classes ($class: bg\:brown, $property: background-color, $variable: --brown);
+@include create-utility-classes ($class: bg\:sky, $property: background-color, $variable: --sky);
+@include create-utility-classes ($class: bg\:mint, $property: background-color, $variable: --mint);
+@include create-utility-classes ($class: bg\:lime, $property: background-color, $variable: --lime);
+@include create-utility-classes ($class: bg\:amber, $property: background-color, $variable: --amber);
