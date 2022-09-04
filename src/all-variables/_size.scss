@@ -53,7 +53,7 @@
 
   --font-size--xs: calc(var(--font-size) / #{$pow2});
   --font-size--s: calc(var(--font-size) / #{$pow1});
-  --font-size: calc(var(--unit-size) * 1);
+  --font-size: 1rem;
   --font-size--l: calc(var(--font-size) * #{$pow1});
   --font-size--xl: calc(var(--font-size) * #{$pow2});
   --font-size--xxl: calc(var(--font-size) * #{$pow3});
