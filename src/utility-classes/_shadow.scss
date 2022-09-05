@@ -1,8 +1,15 @@
+.shd\:s {
+  box-shadow: var(--slk-box-shadow--s);
+}
 
-.shd\:s { box-shadow: var(--box-shadow--s); }
+.shd {
+  box-shadow: var(--slk-box-shadow);
+}
 
-.shd { box-shadow: var(--box-shadow); }
+.shd\:l {
+  box-shadow: var(--slk-box-shadow--l);
+}
 
-.shd\:l { box-shadow: var(--box-shadow--l); }
-
-.shd\:modal { box-shadow: var(--box-shadow--modal); }
+.shd\:modal {
+  box-shadow: var(--slk-box-shadow--modal);
+}

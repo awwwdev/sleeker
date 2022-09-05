@@ -33,108 +33,116 @@
 }
 
 :root {
-  @include create-classes($class: gap, $property: gap, $variable: --gap);
-  @include create-classes($class: pd, $property: padding, $variable: --padding);
+  @include create-classes($class: gap, $property: gap, $variable: --slk-gap);
+  @include create-classes(
+    $class: pd,
+    $property: padding,
+    $variable: --slk-padding
+  );
   @include create-classes(
     $class: pd-block,
     $property: padding-block,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-block-start,
     $property: padding-block-start,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-block-end,
     $property: padding-block-end,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-inline,
     $property: padding-inline,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-inline-start,
     $property: padding-inline-start,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-inline-end,
     $property: padding-inline-end,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-top,
     $property: padding-top,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-btm,
     $property: padding-bottom,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-left,
     $property: padding-left,
-    $variable: --padding
+    $variable: --slk-padding
   );
   @include create-classes(
     $class: pd-right,
     $property: padding-right,
-    $variable: --padding
+    $variable: --slk-padding
   );
-  @include create-classes($class: mg, $property: margin, $variable: --margin);
+  @include create-classes(
+    $class: mg,
+    $property: margin,
+    $variable: --slk-margin
+  );
   @include create-classes(
     $class: mg-block,
     $property: margin-block,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-block-start,
     $property: margin-block-start,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-block-end,
     $property: margin-block-end,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-inline,
     $property: margin-inline,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-inline-start,
     $property: margin-inline-start,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-inline-end,
     $property: margin-inline-end,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-top,
     $property: margin-top,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-btm,
     $property: margin-bottom,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-left,
     $property: margin-left,
-    $variable: --margin
+    $variable: --slk-margin
   );
   @include create-classes(
     $class: mg-right,
     $property: margin-right,
-    $variable: --margin
+    $variable: --slk-margin
   );
 }
 

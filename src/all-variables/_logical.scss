@@ -1,15 +1,15 @@
 :root {
   /* ☀️🌘 HANDLING DARK AND LIGHT */
-  --ON: initial;
-  --OFF: ;
+  --slk-ON: initial;
+  --slk-OFF: ;
 }
 
 .theme\:light {
-  --light: var(--ON);
-  --dark: var(--OFF);
+  --slk-light: var(--slk-ON);
+  --slk-dark: var(--slk-OFF);
 }
 
 .theme\:dark {
-  --light: var(--OFF);
-  --dark: var(--ON);
+  --slk-light: var(--slk-OFF);
+  --slk-dark: var(--slk-ON);
 }

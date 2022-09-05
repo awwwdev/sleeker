@@ -1,6 +1,6 @@
 .button {
-  padding: var(--padding--s);
-  border-radius: var(--border-radius);
+  padding: var(--slk-padding--s);
+  border-radius: var(--slk-border-radius);
   font-weight: 900;
   border: none;
 }
@@ -9,5 +9,5 @@ a.button {
   background-color: var(--gray-5);
   width: max-content;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--slk-text-color);
 }
