@@ -1,4 +1,19 @@
 @use 'colors/black';
 @use 'colors/white';
-@use 'colors/light';
-@use 'colors/dark';
+@use 'colors/light' as light;
+@use 'colors/dark' as dark;
+:root,
+.slk-color-scheme\:light {
+  @include light.define-color-variables;
+}
+
+.slk-color-scheme\:dark {
+  @include dark.define-color-variables;
+}
+:root {
+  @media (prefers-color-scheme: dark) {
+    :not(.slk-color-scheme\:light) {
+      @include dark.define-color-variables;
+    }
+  }
+}
