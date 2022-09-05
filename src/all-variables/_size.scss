@@ -11,7 +11,6 @@
     --unit-size: 0.6rem;
   }
 
-
   $ratio: 1.5;
   --ratio: $ratio;
 
@@ -21,45 +20,113 @@
   $pow3: $pow2 * $ratio;
   $pow4: $pow3 * $ratio;
   $pow5: $pow4 * $ratio;
+  $pow6: $pow5 * $ratio;
+  $pow7: $pow6 * $ratio;
+  $pow8: $pow7 * $ratio;
+  $pow9: $pow8 * $ratio;
+  $pow10: $pow9 * $ratio;
 
-  --padding--xxxxs: calc(var(--padding) / #{$pow5});
-  --padding--xxxs: calc(var(--padding) / #{$pow4});
-  --padding--xxs: calc(var(--padding) / #{$pow3});
-  --padding--xs: calc(var(--padding) / #{$pow2});
+  --padding: calc(var(--unit-size) * 1);
+
   --padding--s: calc(var(--padding) / #{$pow1});
-  --padding: calc(var(--unit-size) * 2);
+  --padding--xs: calc(var(--padding) / #{$pow2});
+  --padding--2xs: calc(var(--padding) / #{$pow3});
+  --padding--3xs: calc(var(--padding) / #{$pow4});
+  --padding--4xs: calc(var(--padding) / #{$pow5});
+  --padding--5xs: calc(var(--padding) / #{$pow6});
+  --padding--6xs: calc(var(--padding) / #{$pow7});
+  --padding--7xs: calc(var(--padding) / #{$pow8});
+  --padding--8xs: calc(var(--padding) / #{$pow9});
+  --padding--9xs: calc(var(--padding) / #{$pow10});
+  
   --padding--l: calc(var(--padding) * #{$pow1});
   --padding--xl: calc(var(--padding) * #{$pow2});
+  --padding--2xl: calc(var(--padding) * #{$pow3});
+  --padding--3xl: calc(var(--padding) * #{$pow4});
+  --padding--4xl: calc(var(--padding) * #{$pow5});
+  --padding--5xl: calc(var(--padding) * #{$pow6});
+  --padding--6xl: calc(var(--padding) * #{$pow7});
+  --padding--7xl: calc(var(--padding) * #{$pow8});
+  --padding--8xl: calc(var(--padding) * #{$pow9});
+  --padding--9xl: calc(var(--padding) * #{$pow10});
 
-  --border-radius--xxxs: calc(var(--border-radius) / #{$pow4});
-  --border-radius--xxs: calc(var(--border-radius) / #{$pow3});
-  --border-radius--xs: calc(var(--border-radius) / #{$pow2});
-  --border-radius--s: calc(var(--border-radius) / #{$pow1});
+
   --border-radius: calc(var(--unit-size) * 1);
+
+  
+  --border-radius--s: calc(var(--border-radius) / #{$pow1});
+  --border-radius--xs: calc(var(--border-radius) / #{$pow2});
+  --border-radius--2xs: calc(var(--border-radius) / #{$pow3});
+  --border-radius--3xs: calc(var(--border-radius) / #{$pow4});
+  --border-radius--4xs: calc(var(--border-radius) / #{$pow5});
+  --border-radius--5xs: calc(var(--border-radius) / #{$pow6});
+  --border-radius--6xs: calc(var(--border-radius) / #{$pow7});
+  --border-radius--7xs: calc(var(--border-radius) / #{$pow8});
+  --border-radius--8xs: calc(var(--border-radius) / #{$pow9});
+  --border-radius--9xs: calc(var(--border-radius) / #{$pow10});
+  
   --border-radius--l: calc(var(--border-radius) * #{$pow1});
   --border-radius--xl: calc(var(--border-radius) * #{$pow2});
-  --border-radius--xxl: calc(var(--border-radius) * #{$pow3});
+  --border-radius--2xl: calc(var(--border-radius) * #{$pow3});
+  --border-radius--3xl: calc(var(--border-radius) * #{$pow4});
+  --border-radius--4xl: calc(var(--border-radius) * #{$pow5});
+  --border-radius--5xl: calc(var(--border-radius) * #{$pow6});
+  --border-radius--6xl: calc(var(--border-radius) * #{$pow7});
+  --border-radius--7xl: calc(var(--border-radius) * #{$pow8});
+  --border-radius--8xl: calc(var(--border-radius) * #{$pow9});
+  --border-radius--9xl: calc(var(--border-radius) * #{$pow10});
 
   --border-radius--pill: calc(var(--unit-size) * 1000);
 
-  --gap--xxs: calc(var(--gap) / #{$pow3});
-  --gap--xs: calc(var(--gap) / #{$pow2});
-  --gap--s: calc(var(--gap) / #{$pow1});
+  
   --gap: calc(var(--unit-size) * 1);
+
+  --gap--s: calc(var(--gap) / #{$pow1});
+  --gap--xs: calc(var(--gap) / #{$pow2});
+  --gap--2xs: calc(var(--gap) / #{$pow3});
+  --gap--3xs: calc(var(--gap) / #{$pow4});
+  --gap--4xs: calc(var(--gap) / #{$pow5});
+  --gap--5xs: calc(var(--gap) / #{$pow6});
+  --gap--6xs: calc(var(--gap) / #{$pow7});
+  --gap--7xs: calc(var(--gap) / #{$pow8});
+  --gap--8xs: calc(var(--gap) / #{$pow9});
+  --gap--9xs: calc(var(--gap) / #{$pow10});
+  
   --gap--l: calc(var(--gap) * #{$pow1});
   --gap--xl: calc(var(--gap) * #{$pow2});
-  --gap--xxl: calc(var(--gap) * #{$pow3});
-  --gap--xxxl: calc(var(--gap) * #{$pow4});
+  --gap--2xl: calc(var(--gap) * #{$pow3});
+  --gap--3xl: calc(var(--gap) * #{$pow4});
+  --gap--4xl: calc(var(--gap) * #{$pow5});
+  --gap--5xl: calc(var(--gap) * #{$pow6});
+  --gap--6xl: calc(var(--gap) * #{$pow7});
+  --gap--7xl: calc(var(--gap) * #{$pow8});
+  --gap--8xl: calc(var(--gap) * #{$pow9});
+  --gap--9xl: calc(var(--gap) * #{$pow10});
 
-  --font-size--xs: calc(var(--font-size) / #{$pow2});
-  --font-size--s: calc(var(--font-size) / #{$pow1});
+  
   --font-size: 1rem;
+
+  --font-size--s: calc(var(--font-size) / #{$pow1});
+  --font-size--xs: calc(var(--font-size) / #{$pow2});
+  --font-size--2xs: calc(var(--font-size) / #{$pow3});
+  --font-size--3xs: calc(var(--font-size) / #{$pow4});
+  --font-size--4xs: calc(var(--font-size) / #{$pow5});
+  --font-size--5xs: calc(var(--font-size) / #{$pow6});
+  --font-size--6xs: calc(var(--font-size) / #{$pow7});
+  --font-size--7xs: calc(var(--font-size) / #{$pow8});
+  --font-size--8xs: calc(var(--font-size) / #{$pow9});
+  --font-size--9xs: calc(var(--font-size) / #{$pow10});
+  
   --font-size--l: calc(var(--font-size) * #{$pow1});
   --font-size--xl: calc(var(--font-size) * #{$pow2});
-  --font-size--xxl: calc(var(--font-size) * #{$pow3});
-  --font-size--xxxl: calc(var(--font-size) * #{$pow4});
-  --font-size--xxxxl: calc(var(--font-size) * #{$pow5});
-
+  --font-size--2xl: calc(var(--font-size) * #{$pow3});
+  --font-size--3xl: calc(var(--font-size) * #{$pow4});
+  --font-size--4xl: calc(var(--font-size) * #{$pow5});
+  --font-size--5xl: calc(var(--font-size) * #{$pow6});
+  --font-size--6xl: calc(var(--font-size) * #{$pow7});
+  --font-size--7xl: calc(var(--font-size) * #{$pow8});
+  --font-size--8xl: calc(var(--font-size) * #{$pow9});
+  --font-size--9xl: calc(var(--font-size) * #{$pow10});
 
   --underline-offset: 0.4em;
   --text-decoration-thickness: 0.03em;
