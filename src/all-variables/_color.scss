@@ -1,12 +1,11 @@
 @use 'colors/black';
 @use 'colors/white';
-@use 'colors/light' as light;
-@use 'colors/dark' as dark;
+@use 'colors/light';
+@use 'colors/dark';
 @use 'colors/light-dark';
 
 :root,
 .slk-color-scheme\:light {
-  @include light.define-color-variables;
   --slk-is-light: var(--slk-TRUE);
   --slk-is-dark: var(--slk-FALSE);
 }
