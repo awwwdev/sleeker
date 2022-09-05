@@ -12,7 +12,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not(.slk-color-scheme\:light) {
+  :not(.slk-color-scheme\:light) {
     @include dark.define-color-variables;
   }
 }
