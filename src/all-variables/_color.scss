@@ -2,17 +2,23 @@
 @use 'colors/white';
 @use 'colors/light' as light;
 @use 'colors/dark' as dark;
+@use 'colors/light-dark';
+
 :root,
 .slk-color-scheme\:light {
   @include light.define-color-variables;
+  --slk-is-light: var(--slk-TRUE);
+  --slk-is-dark: var(--slk-FALSE);
 }
 
 .slk-color-scheme\:dark {
-  @include dark.define-color-variables;
+  --slk-is-light: var(--slk-FALSE);
+  --slk-is-dark: var(--slk-TRUE);
 }
 
 @media (prefers-color-scheme: dark) {
   :not(.slk-color-scheme\:light) {
-    @include dark.define-color-variables;
+    --slk-is-light: var(--slk-FALSE);
+    --slk-is-dark: var(--slk-TRUE);
   }
 }
