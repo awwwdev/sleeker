@@ -10,10 +10,9 @@
 .slk-color-scheme\:dark {
   @include dark.define-color-variables;
 }
-:root {
-  @media (prefers-color-scheme: dark) {
-    :not(.slk-color-scheme\:light) {
-      @include dark.define-color-variables;
-    }
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.slk-color-scheme\:light) {
+    @include dark.define-color-variables;
   }
 }
