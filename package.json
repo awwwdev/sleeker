@@ -1,6 +1,6 @@
 {
   "name": "sleeker",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "An sleeker package",
   "main": "index.js",
   "scripts": {
