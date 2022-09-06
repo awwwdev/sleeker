@@ -50,7 +50,7 @@
   --slk-padding--8xl: calc(var(--slk-padding) * #{$pow9});
   --slk-padding--9xl: calc(var(--slk-padding) * #{$pow10});
 
-  --slk-border-radius: calc(var(--slk-unit-size) * 1);
+  --slk-border-radius: calc(var(--slk-unit-size) * 0.5);
 
   --slk-border-radius--s: calc(var(--slk-border-radius) / #{$pow1});
   --slk-border-radius--xs: calc(var(--slk-border-radius) / #{$pow2});
