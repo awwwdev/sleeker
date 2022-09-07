@@ -1,0 +1,86 @@
+@mixin create-classes($class, $property, $variable) { 
+  .#{$class} {
+    #{$property}: var(#{$variable}); }
+
+  .#{$class}\:s {
+    #{$property}: var(#{$variable}--s); }
+
+  .#{$class}\:xs {
+    #{$property}: var(#{$variable}--xs); }
+
+  @for $i from 2 through 9 {
+    .#{$class}\:#{$i}xs {      #{$property}: var(#{$variable}--#{$i}xs); }
+  }
+
+  .#{$class}\:l {
+    #{$property}: var(#{$variable}--s); }
+
+  .#{$class}\:xl {
+    #{$property}: var(#{$variable}--xl); }
+
+  @for $i from 2 through 9 {
+    .#{$class}\:#{$i}xl {      #{$property}: var(#{$variable}--#{$i}xl); }
+  }
+}
+
+:root { @include create-classes($class: gap, $property: gap, $variable: --slk-gap); @include create-classes(
+    $class: row-gap,
+    $property: row-gap,
+    $variable: --slk-gap
+  ); @include create-classes(
+    $class: column-gap,
+    $property: column-gap,
+    $variable: --slk-gap
+  ); }
+
+  // gap in block direction (inside non flex and non grid elements)
+  
+  .bl-gap > * + * { margin-block-start: var(--slk-gap); }
+  
+  .bl-gap\:s > * + * { margin-block-start: var(--slk-gap--s); }
+  .bl-gap\:xs > * + * { margin-block-start: var(--slk-gap--xs); }
+  .bl-gap\:2xs > * + * { margin-block-start: var(--slk-gap--2xs); }
+  .bl-gap\:3xs > * + * { margin-block-start: var(--slk-gap--3xs); }
+  .bl-gap\:4xs > * + * { margin-block-start: var(--slk-gap--4xs); }
+  .bl-gap\:5xs > * + * { margin-block-start: var(--slk-gap--5xs); }
+  .bl-gap\:6xs > * + * { margin-block-start: var(--slk-gap--6xs); }
+  .bl-gap\:7xs > * + * { margin-block-start: var(--slk-gap--7xs); }
+  .bl-gap\:8xs > * + * { margin-block-start: var(--slk-gap--8xs); }
+  .bl-gap\:9xs > * + * { margin-block-start: var(--slk-gap--9xs); }
+
+  .bl-gap\:l > * + * { margin-block-start: var(--slk-gap--l); }
+.bl-gap\:xl > * + * { margin-block-start: var(--slk-gap--xl); }
+.bl-gap\:2xl > * + * { margin-block-start: var(--slk-gap--2xl); }
+.bl-gap\:3xl > * + * { margin-block-start: var(--slk-gap--3xl); }
+.bl-gap\:4xl > * + * { margin-block-start: var(--slk-gap--4xl); }
+.bl-gap\:5xl > * + * { margin-block-start: var(--slk-gap--5xl); }
+.bl-gap\:6xl > * + * { margin-block-start: var(--slk-gap--6xl); }
+.bl-gap\:7xl > * + * { margin-block-start: var(--slk-gap--7xl); }
+.bl-gap\:8xl > * + * { margin-block-start: var(--slk-gap--8xl); }
+.bl-gap\:9xl > * + * { margin-block-start: var(--slk-gap--9xl); }
+
+// gap in inline direction (inside non flex and non grid elements)
+
+.inl-gap > * + * { margin-inline-start: var(--slk-gap); }
+  
+.inl-gap\:s > * + * { margin-inline-start: var(--slk-gap--s); }
+.inl-gap\:xs > * + * { margin-inline-start: var(--slk-gap--xs); }
+.inl-gap\:2xs > * + * { margin-inline-start: var(--slk-gap--2xs); }
+.inl-gap\:3xs > * + * { margin-inline-start: var(--slk-gap--3xs); }
+.inl-gap\:4xs > * + * { margin-inline-start: var(--slk-gap--4xs); }
+.inl-gap\:5xs > * + * { margin-inline-start: var(--slk-gap--5xs); }
+.inl-gap\:6xs > * + * { margin-inline-start: var(--slk-gap--6xs); }
+.inl-gap\:7xs > * + * { margin-inline-start: var(--slk-gap--7xs); }
+.inl-gap\:8xs > * + * { margin-inline-start: var(--slk-gap--8xs); }
+.inl-gap\:9xs > * + * { margin-inline-start: var(--slk-gap--9xs); }
+
+.inl-gap\:l > * + * { margin-inline-start: var(--slk-gap--l); }
+.inl-gap\:xl > * + * { margin-inline-start: var(--slk-gap--xl); }
+.inl-gap\:2xl > * + * { margin-inline-start: var(--slk-gap--2xl); }
+.inl-gap\:3xl > * + * { margin-inline-start: var(--slk-gap--3xl); }
+.inl-gap\:4xl > * + * { margin-inline-start: var(--slk-gap--4xl); }
+.inl-gap\:5xl > * + * { margin-inline-start: var(--slk-gap--5xl); }
+.inl-gap\:6xl > * + * { margin-inline-start: var(--slk-gap--6xl); }
+.inl-gap\:7xl > * + * { margin-inline-start: var(--slk-gap--7xl); }
+.inl-gap\:8xl > * + * { margin-inline-start: var(--slk-gap--8xl); }
+.inl-gap\:9xl > * + * { margin-inline-start: var(--slk-gap--9xl); }
