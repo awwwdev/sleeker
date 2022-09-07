@@ -7,7 +7,8 @@
 @use 'utility-classes/position';
 @use 'utility-classes/space';
 @use 'utility-classes/text';
-@use 'utility-classes/width';
+@use 'utility-classes/size';
+@use 'utility-classes/size-var';
 @use 'utility-classes/border-radius';
 @use 'utility-classes/border';
 // @use 'utility-classes/outline';
@@ -15,3 +16,4 @@
 @use 'utility-classes/border-color';
 @use 'utility-classes/background-color';
 @use 'utility-classes/layout';
+@use 'utility-classes/display';
