@@ -48,3 +48,12 @@
 @include create-utility-classes ($class: bg\:mint, $property: background-color, $variable: --rdx-mint);
 @include create-utility-classes ($class: bg\:lime, $property: background-color, $variable: --rdx-lime);
 @include create-utility-classes ($class: bg\:amber, $property: background-color, $variable: --rdx-amber);
+
+@include create-utility-classes ($class: bg\:prm, $property: background-color, $variable: --slk-clr-primary);
+@include create-utility-classes ($class: bg\:scnd, $property: background-color, $variable: --slk-clr-secondary);
+@include create-utility-classes ($class: bg\:trt, $property: background-color, $variable: --slk-clr-tertiary);
+
+@include create-utility-classes ($class: bg\:info, $property: background-color, $variable: --slk-clr-info);
+@include create-utility-classes ($class: bg\:success, $property: background-color, $variable: --slk-clr-success);
+@include create-utility-classes ($class: bg\:warning, $property: background-color, $variable: --slk-clr-warning);
+@include create-utility-classes ($class: bg\:error, $property: background-color, $variable: --slk-clr-error);

@@ -19,4 +19,58 @@
         var(--slk-is-dark, var(--rdx-d-#{$colorScale}-a-#{$i}));
     }
   }
+  
+  @each $colorScale in $colorScales {
+    .--prm\:#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-clr-prm-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-clr-prm-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+    .--scnd\:#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-clr-secondary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-clr-secondary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+
+    .--trt\:#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-clr-tertiary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-clr-tertiary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+  }
+  
+  .--prm\:green {
+    @for $i from 1 through 12 {
+      --slk-clr-prm-#{$i}: --rdx-indigo-#{$i};
+      --slk-clr-prm-a-#{$i}: --rdx-indigo-a-#{$i};
+    }
+  }
+  .--scnd\:orange {
+    @for $i from 1 through 12 {
+      --slk-clr-scnd-#{$i}: --rdx-orange-#{$i};
+      --slk-clr-scnd-a-#{$i}: --rdx-orange-a-#{$i};
+    }
+  }
+
+
+  @for $i from 1 through 12 {
+    --slk-clr-info-#{$i}: --rdx-blue-#{$i};
+    --slk-clr-info-a-#{$i}: --rdx-blue-a-#{$i};
+  }
+  @for $i from 1 through 12 {
+    --slk-clr-success-#{$i}: --rdx-grass-#{$i};
+    --slk-clr-success-a-#{$i}: --rdx-grass-a-#{$i};
+  }
+  @for $i from 1 through 12 {
+    --slk-clr-warning-#{$i}: --rdx-amber-#{$i};
+    --slk-clr-warning-a-#{$i}: --rdx-amber-a-#{$i};
+  }
+  @for $i from 1 through 12 {
+    --slk-clr-error-#{$i}: --rdx-tomato-#{$i};
+    --slk-clr-error-a-#{$i}: --rdx-tomato-a-#{$i};
+  }
 }
+

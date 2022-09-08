@@ -48,3 +48,12 @@
 @include create-utility-classes ($class: clr\:mint, $property: color, $variable: --rdx-mint);
 @include create-utility-classes ($class: clr\:lime, $property: color, $variable: --rdx-lime);
 @include create-utility-classes ($class: clr\:amber, $property: color, $variable: --rdx-amber);
+
+@include create-utility-classes ($class: clr\:prm, $property: color, $variable: --slk-clr-primary);
+@include create-utility-classes ($class: clr\:scnd, $property: color, $variable: --slk-clr-secondary);
+@include create-utility-classes ($class: clr\:trt, $property: color, $variable: --slk-clr-tertiary);
+
+@include create-utility-classes ($class: clr\:info, $property: color, $variable: --slk-clr-info);
+@include create-utility-classes ($class: clr\:success, $property: color, $variable: --slk-clr-success);
+@include create-utility-classes ($class: clr\:warning, $property: color, $variable: --slk-clr-warning);
+@include create-utility-classes ($class: clr\:error, $property: color, $variable: --slk-clr-error);
