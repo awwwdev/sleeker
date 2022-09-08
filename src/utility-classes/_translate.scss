@@ -1,7 +1,31 @@
-.transX\:0 { transform: translateX(0); }
-.transX\:50\% { transform: translateX(50%); }
-.transX\:-50\% { transform: translateX(-50%); }
+.transX\:0 {
+  --slk-transform-x: 0;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
+.transX\:50\% {
+  --slk-transform-x: 50%;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
+.transX\:-50\% {
+  --slk-transform-x: -50%;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
 
-.transY\:0 { transform: translateY(0); }
-.transY\:50\% { transform: translateY(50%); }
-.transY\:-50\% { transform: translateY(-50%); }
+.transY\:0 {
+  --slk-transform-y: 0;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
+.transY\:50\% {
+  --slk-transform-y: 50%;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
+.transY\:-50\% {
+  --slk-transform-y: -50%;
+  transform: translateX(var(--slk-transform-x))
+    translateY(var(--slk-transform-y));
+}
