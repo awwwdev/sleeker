@@ -9,6 +9,7 @@
 @use 'utility-classes/text';
 @use 'utility-classes/size';
 @use 'utility-classes/size-var';
+@use 'utility-classes/percentage-var';
 @use 'utility-classes/border-radius';
 @use 'utility-classes/border';
 // @use 'utility-classes/outline';
@@ -19,3 +20,4 @@
 @use 'utility-classes/display';
 @use 'utility-classes/gap';
 @use 'utility-classes/aspect-ratio';
+@use 'utility-classes/_translate';
