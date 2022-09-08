@@ -23,8 +23,8 @@
   @each $colorScale in $colorScales {
     .--prm\:#{$colorScale} {
       @for $i from 1 through 12 {
-        --slk-clr-prm-#{$i}: --rdx-#{$colorScale}-#{$i};
-        --slk-clr-prm-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+        --slk-clr-primary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-clr-primary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
     .--scnd\:#{$colorScale} {
@@ -41,17 +41,17 @@
       }
     }
   }
-  
+
   .--prm\:green {
     @for $i from 1 through 12 {
-      --slk-clr-prm-#{$i}: --rdx-indigo-#{$i};
-      --slk-clr-prm-a-#{$i}: --rdx-indigo-a-#{$i};
+      --slk-clr-primary-#{$i}: --rdx-indigo-#{$i};
+      --slk-clr-primary-a-#{$i}: --rdx-indigo-a-#{$i};
     }
   }
   .--scnd\:orange {
     @for $i from 1 through 12 {
-      --slk-clr-scnd-#{$i}: --rdx-orange-#{$i};
-      --slk-clr-scnd-a-#{$i}: --rdx-orange-a-#{$i};
+      --slk-clr-secondary-#{$i}: --rdx-orange-#{$i};
+      --slk-clr-secondary-a-#{$i}: --rdx-orange-a-#{$i};
     }
   }
 
