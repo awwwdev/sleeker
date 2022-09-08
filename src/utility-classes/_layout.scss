@@ -1,3 +1,5 @@
+// =================================
+//deprecated use gap-bl
 .layout\:stack {
   display: flex;
   flex-direction: column;
@@ -11,13 +13,46 @@
 .layout\:stack > * + * {
   margin-block-start: var(--slk-gap, 1.5em);
 }
+//deprecated use gap-bl
+// =================================
 
-.layout\:rowable {
+.layout\:responsive-head-body {
   display: flex;
-}
-.layout\:rowable-has-media {
-  display: flex;
+  flex-wrap: wrap;
+
+  &.layout-child\:head {
+    flex: 1;
+  }
+  &.layout-child\:body {
+    flex: 9999;
+    min-width: var(--min-width, 20rem);
+  }
 } // no need in :has version
+
+// =========================================================================
+
+[class*="layout:row-after"] {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    flex-basis: calc(( var(--row-after, 50rem) - 100%) * 999);
+  }
+}
+
+.layout\:row-after\(100rem\) {--row-after: 100rem;}
+.layout\:row-after\(90rem\) {--row-after: 90rem;}
+.layout\:row-after\(80rem\) {--row-after: 80rem;}
+.layout\:row-after\(70rem\) {--row-after: 70rem;}
+.layout\:row-after\(60rem\) {--row-after: 60rem;}
+.layout\:row-after\(50rem\) {--row-after: 50rem;}
+.layout\:row-after\(40rem\) {--row-after: 40rem;}
+.layout\:row-after\(30rem\) {--row-after: 30rem;}
+.layout\:row-after\(20rem\) {--row-after: 20rem;}
+.layout\:row-after\(10rem\) {--row-after: 10rem;}
+
+
+// =========================================================================
+
 .layout\:cover {
   display: flex;
 }
