@@ -19,17 +19,20 @@
         var(--slk-is-dark, var(--rdx-d-#{$colorScale}-a-#{$i}));
     }
   }
-  
   @each $colorScale in $colorScales {
     .--prm\:#{$colorScale} {
       @for $i from 1 through 12 {
         --slk-clr-primary-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
         --slk-clr-primary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
     .--scnd\:#{$colorScale} {
       @for $i from 1 through 12 {
         --slk-clr-secondary-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
         --slk-clr-secondary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
@@ -37,22 +40,29 @@
     .--trt\:#{$colorScale} {
       @for $i from 1 through 12 {
         --slk-clr-tertiary-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
         --slk-clr-tertiary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
   }
 
-  .--prm\:green {
+
     @for $i from 1 through 12 {
       --slk-clr-primary-#{$i}: --rdx-indigo-#{$i};
       --slk-clr-primary-a-#{$i}: --rdx-indigo-a-#{$i};
-    }
+
   }
-  .--scnd\:orange {
+  
     @for $i from 1 through 12 {
       --slk-clr-secondary-#{$i}: --rdx-orange-#{$i};
       --slk-clr-secondary-a-#{$i}: --rdx-orange-a-#{$i};
-    }
+
+  }
+    @for $i from 1 through 12 {
+      --slk-clr-tertieary-#{$i}: --rdx-violet-#{$i};
+      --slk-clr-secondary-a-#{$i}: --rdx-violet-a-#{$i};
+
   }
 
 
@@ -73,4 +83,3 @@
     --slk-clr-error-a-#{$i}: --rdx-tomato-a-#{$i};
   }
 }
-
