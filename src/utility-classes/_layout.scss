@@ -20,10 +20,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  &.layout-child\:head {
+  .layout-child\:head {
     flex: 1;
   }
-  &.layout-child\:body {
+  .layout-child\:body {
     flex: 9999;
     min-width: var(--min-width, 20rem);
   }
