@@ -5,7 +5,6 @@
 @use 'utility-classes/other';
 @use 'utility-classes/overflow';
 @use 'utility-classes/position';
-@use 'utility-classes/space';
 @use 'utility-classes/text';
 @use 'utility-classes/size';
 @use 'utility-classes/size-var';
@@ -20,5 +19,8 @@
 @use 'utility-classes/layout';
 @use 'utility-classes/display';
 @use 'utility-classes/gap';
+@use 'utility-classes/margin';
+@use 'utility-classes/padding';
 @use 'utility-classes/aspect-ratio';
-@use 'utility-classes/_translate';
+@use 'utility-classes/object-fit';
+@use 'utility-classes/translate';
