@@ -1,41 +1,12 @@
+@use 'mixins/size-mixin' as size-mixins;
 @mixin create-classes($class, $property, $variable) {  
   .#{$class}\:auto {
   #{$property}: auto; 
-}
-  .#{$class}\:--s1 { #{$property}: var(--slk-local-size-1); }
-  .#{$class}\:--s2 { #{$property}: var(--slk-local-size-2); }
-  .#{$class}\:--s3 { #{$property}: var(--slk-local-size-3); }
-  .#{$class}\:--s4 { #{$property}: var(--slk-local-size-4); }
+  }
+  @include size-mixins.assign-percentage-var-classes($class: $class, $property: $property);
 
-  .#{$class}\:--pcn1 { #{$property}: var(--slk-local-percentage-1); }
-  .#{$class}\:--pcn2 { #{$property}: var(--slk-local-percentage-2); }
-  .#{$class}\:--pcn3 { #{$property}: var(--slk-local-percentage-3); }
-  .#{$class}\:--pcn4 { #{$property}: var(--slk-local-percentage-4); }
-
-
-  .#{$class} {
-  #{$property}: var(#{$variable}); 
-}
-
-.#{$class}\:s {
-  #{$property}: var(#{$variable}--s); }
-
-.#{$class}\:xs {
-  #{$property}: var(#{$variable}--xs); }
-
-@for $i from 2 through 9 {
-  .#{$class}\:#{$i}xs {      #{$property}: var(#{$variable}--#{$i}xs); }
-}
-
-.#{$class}\:l {
-  #{$property}: var(#{$variable}--s); }
-
-.#{$class}\:xl {
-  #{$property}: var(#{$variable}--xl); }
-
-@for $i from 2 through 9 {
-  .#{$class}\:#{$i}xl {      #{$property}: var(#{$variable}--#{$i}xl); }
-}
+  @include size-mixins.assign-size-var-classes($class: $class, $property: $property);
+  @include size-mixins.create-t-shirt-size-classes($class: $class, $property: $property, $variable: $variable);
 }
 
 
