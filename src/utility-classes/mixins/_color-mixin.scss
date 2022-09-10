@@ -1,59 +1,44 @@
-@mixin create-classes-for-one-color ($class, $property, $variable) {
+@mixin create-classes-for-one-color ($class, $property, $variable , $is-custom-property: false) {
   .#{class} {
-    #{$property} : var(#{$variable})
+    #{$property} : var(#{$variable});
   }
 
   @for $i from 1 through 12 {
     .#{$class}#{$i} {
-      #{$property} : var(#{$variable}-#{$i})
+      @if $is-custom-property {
+        #{$property}-#{$i} : var(#{$variable}-#{$i});
+      } @else {
+        #{$property} : var(#{$variable}-#{$i});
+      }
     }
   }
 
   @for $i from 1 through 12 {
     .#{$class}#{$i}a {
-      #{$property} : var(#{$variable}-a-#{$i})
+      @if $is-custom-property {
+        #{$property}-a-#{$i}: var(#{$variable}-a-#{$i});
+      } @else {
+        #{$property} : var(#{$variable}-a-#{$i});
+      }
     }
   }
 }
 
-@mixin assign-color-variable ($class, $property, $variable) {
-  .#{class} {
-    #{$property} : var(#{$variable})
-  }
 
-  @for $i from 1 through 12 {
-    .#{$class}#{$i} {
-      #{$property}-#{$i} : var(#{$variable}-#{$i})
-    }
-  }
+@mixin create-classes-for-all-colors ($class , $property , $is-custom-property: false) {
 
-  @for $i from 1 through 12 {
-    .#{$class}#{$i}a {
-      #{$property}-a-#{$i} : var(#{$variable}-a-#{$i})
-    }
-  }
-}
-
-@mixin create-classes-for-all-colors ($class , $property) {
-
-  $colorScales: 'amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold',
+  $color-scales: 'amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold',
   'grass', 'gray', 'green', 'indigo', 'lime', 'mauve', 'mint', 'olive',
   'orange', 'pink', 'pulm', 'purple', 'red', 'sage', 'sand', 'sky', 'slate',
   'teal', 'tomato', 'violet', 'yellow';
 
-  @each $colorScale in $colorScales {
-    @include create-classes-for-one-color ($class: #{$class}\:#{$colorScale}, $property: $property, $variable: --rdx-#{$colorScale});
+  @each $color-scale in $color-scales {
+    @include create-classes-for-one-color ($class: #{$class}\:r-#{$color-scale}, $property: $property, $variable: --rdx-#{$color-scale}, $is-custom-property: $is-custom-property);
   }
-}
-
-@mixin assign-all-semantic-colors ($class, $property) {
   
-@include assign-color-variable ($class: #{$class}\:prm, $property: $property, $variable: --slk-clr-primary);
-@include assign-color-variable ($class: #{$class}\:scnd, $property: $property, $variable: --slk-clr-secondary);
-@include assign-color-variable ($class: #{$class}\:trt, $property: $property, $variable: --slk-clr-tertiary);
-
-@include assign-color-variable ($class: #{$class}\:info, $property: $property, $variable: --slk-clr-info);
-@include assign-color-variable ($class: #{$class}\:success, $property: $property, $variable: --slk-clr-success);
-@include assign-color-variable ($class: #{$class}\:warning, $property: $property, $variable: --slk-clr-warning);
-@include assign-color-variable ($class: #{$class}\:error, $property: $property, $variable: --slk-clr-error);
+  $semantic-colors: 'prm', 'scnd', 'trt', 'info' , 'success' , 'warning' , 'error';
+  @each $semantic-color in $semantic-colors {
+    @include create-classes-for-one-color ($class: #{$class}\:#{$semantic-colors}, $property: $property, $variable: --slk-#{$semantic-color}, 
+    $is-custom-property: $is-custom-property);
+  }
 }

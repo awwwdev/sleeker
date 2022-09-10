@@ -1,0 +1,6 @@
+@use 'mixins/color-mixin' as color-mixins;
+
+$semantic-colors: 'prm', 'scnd', 'trt', 'info' , 'success' , 'warning' , 'error';
+@each $semantic-color in $semantic-colors {
+  @include color-mixins.create-classes-for-all-colors ($class: --#{$semantic-color}, $property: --slk-#{$semantic-color}, $is-custom-property: true);
+}

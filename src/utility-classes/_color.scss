@@ -1,4 +1,3 @@
 @use 'mixins/color-mixin' as color-mixins;
 
 @include color-mixins.create-classes-for-all-colors ($class: clr, $property: color);
-@include color-mixins.assign-all-semantic-colors ($class: clr, $property: color);

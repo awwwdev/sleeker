@@ -20,66 +20,103 @@
     }
   }
   @each $colorScale in $colorScales {
-    .--prm\:#{$colorScale} {
+    .--prm\:r-#{$colorScale} {
       @for $i from 1 through 12 {
-        --slk-clr-primary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-prm-#{$i}: --rdx-#{$colorScale}-#{$i};
       }
       @for $i from 1 through 12 {
-        --slk-clr-primary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+        --slk-prm-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
-    .--scnd\:#{$colorScale} {
+    .--scnd\:r-#{$colorScale} {
       @for $i from 1 through 12 {
-        --slk-clr-secondary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-scd-#{$i}: --rdx-#{$colorScale}-#{$i};
       }
       @for $i from 1 through 12 {
-        --slk-clr-secondary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+        --slk-scd-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
 
-    .--trt\:#{$colorScale} {
+    .--trt\:r-#{$colorScale} {
       @for $i from 1 through 12 {
-        --slk-clr-tertiary-#{$i}: --rdx-#{$colorScale}-#{$i};
+        --slk-trt-#{$i}: --rdx-#{$colorScale}-#{$i};
       }
       @for $i from 1 through 12 {
-        --slk-clr-tertiary-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+        --slk-trt-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+
+    
+    .--info\:r-#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-info-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
+        --slk-info-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+    
+    .--success\:r-#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-success-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
+        --slk-success-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+    
+    .--warning\:r-#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-warning-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
+        --slk-warning-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
+      }
+    }
+
+    .--error\:r-#{$colorScale} {
+      @for $i from 1 through 12 {
+        --slk-error-#{$i}: --rdx-#{$colorScale}-#{$i};
+      }
+      @for $i from 1 through 12 {
+        --slk-error-a-#{$i}: --rdx-#{$colorScale}-a-#{$i};
       }
     }
   }
 
 
     @for $i from 1 through 12 {
-      --slk-clr-primary-#{$i}: --rdx-indigo-#{$i};
-      --slk-clr-primary-a-#{$i}: --rdx-indigo-a-#{$i};
+      --slk-prm-#{$i}: --rdx-indigo-#{$i};
+      --slk-prm-a-#{$i}: --rdx-indigo-a-#{$i};
 
   }
   
     @for $i from 1 through 12 {
-      --slk-clr-secondary-#{$i}: --rdx-orange-#{$i};
-      --slk-clr-secondary-a-#{$i}: --rdx-orange-a-#{$i};
+      --slk-scd-#{$i}: --rdx-orange-#{$i};
+      --slk-scd-a-#{$i}: --rdx-orange-a-#{$i};
 
   }
     @for $i from 1 through 12 {
-      --slk-clr-tertieary-#{$i}: --rdx-violet-#{$i};
-      --slk-clr-secondary-a-#{$i}: --rdx-violet-a-#{$i};
+      --slk-trt-#{$i}: --rdx-violet-#{$i};
+      --slk-trt-a-#{$i}: --rdx-violet-a-#{$i};
 
   }
 
 
   @for $i from 1 through 12 {
-    --slk-clr-info-#{$i}: --rdx-blue-#{$i};
-    --slk-clr-info-a-#{$i}: --rdx-blue-a-#{$i};
+    --slk-info-#{$i}: --rdx-blue-#{$i};
+    --slk-info-a-#{$i}: --rdx-blue-a-#{$i};
   }
   @for $i from 1 through 12 {
-    --slk-clr-success-#{$i}: --rdx-grass-#{$i};
-    --slk-clr-success-a-#{$i}: --rdx-grass-a-#{$i};
+    --slk-success-#{$i}: --rdx-grass-#{$i};
+    --slk-success-a-#{$i}: --rdx-grass-a-#{$i};
   }
   @for $i from 1 through 12 {
-    --slk-clr-warning-#{$i}: --rdx-amber-#{$i};
-    --slk-clr-warning-a-#{$i}: --rdx-amber-a-#{$i};
+    --slk-warning-#{$i}: --rdx-amber-#{$i};
+    --slk-warning-a-#{$i}: --rdx-amber-a-#{$i};
   }
   @for $i from 1 through 12 {
-    --slk-clr-error-#{$i}: --rdx-tomato-#{$i};
-    --slk-clr-error-a-#{$i}: --rdx-tomato-a-#{$i};
+    --slk-error-#{$i}: --rdx-tomato-#{$i};
+    --slk-error-a-#{$i}: --rdx-tomato-a-#{$i};
   }
 }

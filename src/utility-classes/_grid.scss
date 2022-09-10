@@ -5,8 +5,8 @@
     minmax(min(var(--slk-column-min-width), var(--slk-max-width--page)), 1fr)
   ); }
 
-.card { background: var(--slk-clr-primary-3); color: var(--rdx-gray-11); box-shadow: none; border-radius: var(--slk-border-radius); max-width: 100%; overflow: hidden; 
-  .card-title { color: var(--slk-clr-primary-11); }
+.card { background: var(--slk-prm-3); color: var(--rdx-gray-11); box-shadow: none; border-radius: var(--slk-border-radius); max-width: 100%; overflow: hidden; 
+  .card-title { color: var(--slk-prm-11); }
 }
 
 

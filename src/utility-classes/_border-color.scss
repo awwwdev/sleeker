@@ -1,4 +1,3 @@
 @use 'mixins/color-mixin' as color-mixins;
 
 @include color-mixins.create-classes-for-all-colors ($class: br, $property: border-color);
-@include color-mixins.assign-all-semantic-colors ($class: br, $property: border-color);
