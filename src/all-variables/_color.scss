@@ -23,3 +23,45 @@
     @include dark.set-dark-colors;
   }
 }
+
+
+  $colorScales: 'amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold',
+    'grass', 'gray', 'green', 'indigo', 'lime', 'mauve', 'mint', 'olive',
+    'orange', 'pink', 'pulm', 'purple', 'red', 'sage', 'sand', 'sky', 'slate',
+    'teal', 'tomato', 'violet', 'yellow';
+
+:root {
+  @for $i from 1 through 12 {
+    --slk-prm-#{$i}: --rdx-indigo-#{$i};
+    --slk-prm-a-#{$i}: --rdx-indigo-a-#{$i};
+  }
+      
+  @for $i from 1 through 12 {
+    --slk-scd-#{$i}: --rdx-orange-#{$i};
+    --slk-scd-a-#{$i}: --rdx-orange-a-#{$i};
+  }
+  @for $i from 1 through 12 {
+    --slk-trt-#{$i}: --rdx-violet-#{$i};
+    --slk-trt-a-#{$i}: --rdx-violet-a-#{$i};
+  }
+  
+  @for $i from 1 through 12 {
+    --slk-info-#{$i}: --rdx-blue-#{$i};
+    --slk-info-a-#{$i}: --rdx-blue-a-#{$i};
+  }
+
+  @for $i from 1 through 12 {
+    --slk-success-#{$i}: --rdx-grass-#{$i};
+    --slk-success-a-#{$i}: --rdx-grass-a-#{$i};
+  }
+
+  @for $i from 1 through 12 {
+    --slk-warning-#{$i}: --rdx-amber-#{$i};
+    --slk-warning-a-#{$i}: --rdx-amber-a-#{$i};
+  }
+
+  @for $i from 1 through 12 {
+    --slk-error-#{$i}: --rdx-tomato-#{$i};
+    --slk-error-a-#{$i}: --rdx-tomato-a-#{$i};
+  }
+}

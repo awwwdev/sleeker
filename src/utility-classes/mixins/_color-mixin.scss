@@ -1,31 +1,23 @@
-@mixin create-classes-for-one-color ($class, $property, $variable , $is-custom-property: false) {
+@mixin create-classes-for-one-color ($class, $property, $variable) {
   .#{class} {
     #{$property} : var(#{$variable});
   }
 
   @for $i from 1 through 12 {
     .#{$class}#{$i} {
-      @if $is-custom-property {
-        #{$property}-#{$i} : var(#{$variable}-#{$i});
-      } @else {
         #{$property} : var(#{$variable}-#{$i});
-      }
     }
   }
 
   @for $i from 1 through 12 {
     .#{$class}#{$i}a {
-      @if $is-custom-property {
-        #{$property}-a-#{$i}: var(#{$variable}-a-#{$i});
-      } @else {
         #{$property} : var(#{$variable}-a-#{$i});
       }
-    }
   }
 }
 
 
-@mixin create-classes-for-all-colors ($class , $property , $is-custom-property: false) {
+@mixin create-classes-for-all-colors ($class , $property) {
 
   $color-scales: 'amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold',
   'grass', 'gray', 'green', 'indigo', 'lime', 'mauve', 'mint', 'olive',
@@ -33,12 +25,39 @@
   'teal', 'tomato', 'violet', 'yellow';
 
   @each $color-scale in $color-scales {
-    @include create-classes-for-one-color ($class: #{$class}\:r-#{$color-scale}, $property: $property, $variable: --rdx-#{$color-scale}, $is-custom-property: $is-custom-property);
+    @include create-classes-for-one-color ($class: #{$class}\:r-#{$color-scale}, $property: $property, $variable: --rdx-#{$color-scale});
   }
   
   $semantic-colors: 'prm', 'scnd', 'trt', 'info' , 'success' , 'warning' , 'error';
   @each $semantic-color in $semantic-colors {
-    @include create-classes-for-one-color ($class: #{$class}\:#{$semantic-colors}, $property: $property, $variable: --slk-#{$semantic-color}, 
-    $is-custom-property: $is-custom-property);
+    @include create-classes-for-one-color ($class: #{$class}\:#{$semantic-colors}, $property: $property, $variable: --slk-#{$semantic-color});
   }
+}
+
+
+@mixin assign-color-to-semantic-color ($semantic-color , $color-scale) {
+
+  .--#{$semantic-color}\:--#{$color-scale} {
+    --slk-#{$semantic-color}: --rdx-#{$color-scale};
+
+    @for $i from 1 through 12 {
+      --slk-#{$semantic-color}-#{$i}: --rdx-#{$color-scale}-#{$i};
+    }
+
+    @for $i from 1 through 12 {
+      --slk-#{$semantic-color}-a-#{$i}: --rdx-#{$color-scale}-a-#{$i};
+    }
+  }
+}
+
+@mixin define-assigning-classes ($semantic-color) {
+  $color-scales: 'amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold',
+  'grass', 'gray', 'green', 'indigo', 'lime', 'mauve', 'mint', 'olive',
+  'orange', 'pink', 'pulm', 'purple', 'red', 'sage', 'sand', 'sky', 'slate',
+  'teal', 'tomato', 'violet', 'yellow';
+
+  @each $color-scale in $color-scales {
+    @include assign-color-to-semantic-color($semantic-color: $semantic-color , $color-scale: $color-scale);
+  }
+
 }
