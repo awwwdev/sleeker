@@ -1,23 +1,25 @@
 @use 'colors/black';
 @use 'colors/white';
-@use 'colors/light';
-@use 'colors/dark';
-@use 'colors/light-dark';
+@use 'colors/light' as light;
+@use 'colors/dark' as dark;
 
 :root,
 .slk-color-scheme\:light {
   --slk-is-light: var(--slk-TRUE);
   --slk-is-dark: var(--slk-FALSE);
+  @include light.set-light-colors;
 }
 
 .slk-color-scheme\:dark {
   --slk-is-light: var(--slk-FALSE);
   --slk-is-dark: var(--slk-TRUE);
+  @include dark.set-dark-colors;
 }
 
 @media (prefers-color-scheme: dark) {
-  :not(.slk-color-scheme\:light) {
+  :root:not(.slk-color-scheme\:light) {
     --slk-is-light: var(--slk-FALSE);
     --slk-is-dark: var(--slk-TRUE);
+    @include dark.set-dark-colors;
   }
 }

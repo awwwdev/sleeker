@@ -3,13 +3,3 @@
   --slk-TRUE: initial;
   --slk-FALSE: ;
 }
-
-.theme\:light {
-  --slk-is-light: var(--slk-TRUE);
-  --slk-is-dark: var(--slk-FALSE);
-}
-
-.theme\:dark {
-  --slk-is-light: var(--slk-TRUE);
-  --slk-is-dark: var(--slk-FALSE);
-}
