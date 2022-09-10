@@ -30,7 +30,7 @@
   
   $semantic-colors: 'prm', 'scnd', 'trt', 'info' , 'success' , 'warning' , 'error';
   @each $semantic-color in $semantic-colors {
-    @include create-classes-for-one-color ($class: #{$class}\:#{$semantic-colors}, $property: $property, $variable: --slk-#{$semantic-color});
+    @include create-classes-for-one-color ($class: #{$class}\:#{$semantic-color}, $property: $property, $variable: --slk-#{$semantic-color});
   }
 }
 
