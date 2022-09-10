@@ -1,16 +1,10 @@
 //THE SELECTOR BELOW SELECTS ALL CLASSES START WITH brd
-[attribute^='brd'] {
-  border: var(--slk-border-size, 2px) var(--slk-border-style, solid)
-    var(--slk-border-color);
+[attribute^='brd'] { 
+    border: var(--slk-border-size, 2px) var(--slk-border-style, solid)
+    var(--slk-border-color); 
 }
 
-.brd-sz\:1px {
-  --slk-border-size: 1px;
-}
-.brd-clr\:white {
-  --border-color: white;
-}
+.brd-sz\:1px {  --slk-border-size: 1px; }
+.brd-clr\:white {  --border-color: white; }
 
-.brd-style\:dashed {
-  --slk-border-style: dashed;
-}
+.brd-style\:dashed {  --slk-border-style: dashed; }
