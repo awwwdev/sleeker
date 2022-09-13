@@ -13,7 +13,7 @@
   }
 
   .#{$class}\:l {
-    #{$property}: var(#{$variable}--s); }
+    #{$property}: var(#{$variable}--l); }
 
   .#{$class}\:xl {
     #{$property}: var(#{$variable}--xl); }
