@@ -1,0 +1,40 @@
+.grad {
+  background-image: linear-gradient( var(--slk-local-linear-gradient-angle) , var(--slk-local-linear-gradient-color-stop-list));
+  --slk-local-linear-gradient-color-stop-list:
+   var(--slk-local-linear-gradient-color-stop-1)
+   var(--slk-local-linear-gradient-comma-before-color-stop-2) var(--slk-local-linear-gradient-color-stop-2)
+   var(--slk-local-linear-gradient-comma-before-color-stop-3) var(--slk-local-linear-gradient-color-stop-3)
+}
+
+.grad-clr1\:prm { --slk-local-linear-gradient-color-stop-1: var(--slk-prm); }
+.grad-clr1\:scnd { --slk-local-linear-gradient-color-stop-1: var(--slk-scnd);}
+.grad-clr1\:trt { --slk-local-linear-gradient-color-stop-1: var(--slk-trt);}
+
+.grad-clr2\:prm { --slk-local-linear-gradient-color-stop-2: var(--slk-prm); --slk-local-linear-gradient-comma-before-color-stop-2: ,;}
+.grad-clr2\:scnd { --slk-local-linear-gradient-color-stop-2: var(--slk-scnd); --slk-local-linear-gradient-comma-before-color-stop-2: ,;}
+.grad-clr2\:trt { --slk-local-linear-gradient-color-stop-2: var(--slk-trt);  --slk-local-linear-gradient-comma-before-color-stop-2: ,;}
+
+.grad-clr3\:prm { --slk-local-linear-gradient-color-stop-3: var(--slk-prm); --slk-local-linear-gradient-comma-before-color-stop-3: ,;}
+.grad-clr3\:scnd { --slk-local-linear-gradient-color-stop-3: var(--slk-scnd);--slk-local-linear-gradient-comma-before-color-stop-3: ,;}
+.grad-clr3\:trt { --slk-local-linear-gradient-color-stop-3: var(--slk-trt); --slk-local-linear-gradient-comma-before-color-stop-3: ,;}
+
+
+.grad-angle\:0 { --slk-local-linear-gradient-angle : 0deg; }
+.grad-angle\:10 { --slk-local-linear-gradient-angle : 10deg; }
+.grad-angle\:20 { --slk-local-linear-gradient-angle : 20deg; }
+.grad-angle\:30 { --slk-local-linear-gradient-angle : 30deg; }
+.grad-angle\:40 { --slk-local-linear-gradient-angle : 40deg; }
+.grad-angle\:50 { --slk-local-linear-gradient-angle : 50deg; }
+.grad-angle\:60 { --slk-local-linear-gradient-angle : 60deg; }
+.grad-angle\:70 { --slk-local-linear-gradient-angle : 70deg; }
+.grad-angle\:80 { --slk-local-linear-gradient-angle : 80deg; }
+.grad-angle\:90 { --slk-local-linear-gradient-angle : 90deg; }
+.grad-angle\:100 { --slk-local-linear-gradient-angle : 100deg; }
+.grad-angle\:110 { --slk-local-linear-gradient-angle : 110deg; }
+.grad-angle\:120 { --slk-local-linear-gradient-angle : 120deg; }
+.grad-angle\:130 { --slk-local-linear-gradient-angle : 130deg; }
+.grad-angle\:140 { --slk-local-linear-gradient-angle : 140deg; }
+.grad-angle\:150 { --slk-local-linear-gradient-angle : 150deg; }
+.grad-angle\:160 { --slk-local-linear-gradient-angle : 160deg; }
+.grad-angle\:170 { --slk-local-linear-gradient-angle : 170deg; }
+.grad-angle\:180 { --slk-local-linear-gradient-angle : 180deg; }
