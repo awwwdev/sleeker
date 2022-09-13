@@ -1,5 +1,5 @@
-@use 'colors/black';
-@use 'colors/white';
+@use 'colors/black'; // black is always black in dark mode and light mode.
+@use 'colors/white'; // white is always white in dark mode and light mode.
 @use 'colors/light' as light;
 @use 'colors/dark' as dark;
 
@@ -32,15 +32,18 @@
 
 :root {
   @for $i from 1 through 12 {
+    --slk-prm: var( --rdx-indigo);
     --slk-prm-#{$i}: var( --rdx-indigo-#{$i});
     --slk-prm-a-#{$i}: var( --rdx-indigo-a-#{$i});
   }
-      
+  
   @for $i from 1 through 12 {
-    --slk-scd-#{$i}: var( --rdx-orange-#{$i});
-    --slk-scd-a-#{$i}: var( --rdx-orange-a-#{$i});
+    --slk-scnd: var( --rdx-orange);
+    --slk-scnd-#{$i}: var( --rdx-orange-#{$i});
+    --slk-scnd-a-#{$i}: var( --rdx-orange-a-#{$i});
   }
   @for $i from 1 through 12 {
+    --slk-scnd: var( --rdx-violet);
     --slk-trt-#{$i}: var( --rdx-violet-#{$i});
     --slk-trt-a-#{$i}: var( --rdx-violet-a-#{$i});
   }
