@@ -14,6 +14,8 @@
 
 // gap in block direction (inside non flex and non grid elements)
   
+
+//TODO: specificity issue! :((
 .bl-gap > * + * { margin-block-start: var(--slk-gap); }
 
 .bl-gap\:s > * + * { margin-block-start: var(--slk-gap--s); }
