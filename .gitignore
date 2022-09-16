@@ -25,3 +25,6 @@ Thumbs.db
 
 # Sass maps
 *css.map
+
+*local.md
+*local.css
