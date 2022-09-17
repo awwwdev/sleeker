@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hamidkd/sleeker.git"
+    "url": "git+https://github.com/vashmeen/sleeker.git"
   },
   "keywords": [
     "sleeker"
@@ -18,9 +18,9 @@
   "author": "codepotato",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hamidkd/sleeker/issues"
+    "url": "https://github.com/vashmeen/sleeker/issues"
   },
-  "homepage": "https://github.com/hamidkd/sleeker#readme",
+  "homepage": "https://github.com/vashmeen/sleeker#readme",
   "devDependencies": {
     "sass": "^1.54.7"
   }
