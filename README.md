@@ -1,86 +1,86 @@
-# sleeker
+# sleeker  
 
-A atomic-class CSS library, closer to CSS syntax
+A atomic-class CSS library, closer to CSS syntax  
 
-## status:
+## status:  
 This library is not stable yet. We do not recommend using it in production. Expect breaking changes before version v1.0.0
 
-## Setup:
+## Setup:  
 
-‍‍‍‍‍‍‍`npm i sleeker‍‍‍‍‍‍‍`
+‍‍‍‍‍‍‍`npm i sleeker‍‍‍‍‍‍‍`  
 
-import sleeker variables and atomic classes in the root of your project
+import sleeker variables and atomic classes in the root of your project  
 
-‍‍‍‍‍‍‍`import 'sleeker/variables.CSS'‍‍‍‍‍‍‍`
+‍‍‍‍‍‍‍`import 'sleeker/variables.CSS'‍‍‍‍‍‍‍`  
 
-‍‍‍‍‍‍‍`‍import 'sleeker/atomic-classes.CSS'‍‍‍‍‍‍‍`
+‍‍‍‍‍‍‍`‍import 'sleeker/atomic-classes.CSS'‍‍‍‍‍‍‍`  
 
-## Usage
+## Usage  
 
-sleeker classes are like CSS rules.
-For example, to apply ‍‍‍‍‍‍‍`‍background:red` to a button, do this:
-‍‍‍‍‍‍‍`‍<button class="bg:red">I have red background</button>`
+sleeker classes are like CSS rules.  
+For example, to apply ‍‍‍‍‍‍‍`‍background:red` to a button, do this:  
+‍‍‍‍‍‍‍`‍<button class="bg:red">I have red background</button>`  
 
-## Compact CSS syntax
+## Compact CSS syntax  
 
-sleeker provides a compact syntax that is close to CSS and easy to read and remember. 
+sleeker provides a compact syntax that is close to CSS and easy to read and remember.   
 
-**Sleeker rule of thumb: To apply a rule, add that rule in class attribute in `property:value` format. If there is compact version for the property (or the value), replace property (or the value) with compact version.**
+**Sleeker rule of thumb: To apply a rule, add that rule in class attribute in `property:value` format. If there is compact version for the property (or the value), replace property (or the value) with compact version.**  
 
-### case 1 - No compact version - exactly like CSS
+### case 1 - No compact version - exactly like CSS  
 
-for example, to get apply `overflow : hidden ; ` , add ` overflow:hidden ` to the class attribute.
+for example, to get apply `overflow : hidden ; ` , add ` overflow:hidden ` to the class attribute.  
 
-## case 2 - compact version for a CSS word
+## case 2 - compact version for a CSS word  
 
-if a CSS word has compact version, replace CSS word with compact version in all hyphen separated cases.
+if a CSS word has compact version, replace CSS word with compact version in all hyphen separated cases.  
 
-for example `dir` is compact version of `direction`. Then: 
+for example `dir` is compact version of `direction`. Then:   
 
-`direction:rtl` ---> `dir:rtl`
+`direction:rtl` ---> `dir:rtl`  
 
-`flex-direction:row` ---> `flex-dir:row`
+`flex-direction:row` ---> `flex-dir:row`  
 
-Here are some other examples
+Here are some other examples  
 
-*example 1*
+*example 1*  
 
-`size` ---> `sz`
-`inline` ---> `inl`
-`block` ---> `bl`
-`padding` ---> `pd`
+`size` ---> `sz`  
+`inline` ---> `inl`  
+`block` ---> `bl`  
+`padding` ---> `pd`  
 
-Then: 
-`inline-size:100%` ---> `inl-sz:100%`
-`padding-inline-start:xl` ---> `pd-inl:100%`
-`padding-block:xl` ---> `pd-bl:xl`
+Then:   
+`inline-size:100%` ---> `inl-sz:100%`  
+`padding-inline-start:xl` ---> `pd-inl:100%`  
+`padding-block:xl` ---> `pd-bl:xl`  
 
-*example 2*
+*example 2*  
 
-`width` ---> `w`
-`height` ---> `h`
+`width` ---> `w`  
+`height` ---> `h`  
 
-Then: 
-`max-width:100%` ---> `max-w:100%`
-`min-height:100%` ---> `min-h:100%`
+Then:   
+`max-width:100%` ---> `max-w:100%`  
+`min-height:100%` ---> `min-h:100%`  
 
-*example 3*
+*example 3*  
 
-`position` ---> `pos`
-`absolute` ---> `abs`
-`relative` ---> `rel`
+`position` ---> `pos`  
+`absolute` ---> `abs`  
+`relative` ---> `rel`  
 
-Then :
-`position:absolute` ---> `pos:abs`
-`position:relative` ---> `pos:abs`
-`position:sticky` ---> `pos:sticky` (Note `sticky` does not have compact version)
+Then :  
+`position:absolute` ---> `pos:abs`  
+`position:relative` ---> `pos:abs`  
+`position:sticky` ---> `pos:sticky` (Note `sticky` does not have compact version)  
 
-*example 4*
+*example 4*  
 
-`object` ---> `obj`
+`object` ---> `obj`  
 
-Then :
-`object-fit:cover` ---> `obj-fit:cover`
+Then :  
+`object-fit:cover` ---> `obj-fit:cover`  
 
 
 
