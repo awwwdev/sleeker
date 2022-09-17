@@ -1,12 +1,12 @@
 
 .flex { display: flex; }
 
-.row { flex-direction: row; }
-.row.reverse,
-.row-reverse { flex-direction: row-reverse; }
-.column { flex-direction: column; }
-.column.reverse,
-.column-reverse { flex-direction: column-reverse; }
+.flex-dir\:row { flex-direction: row; }
+.flex-dir\:row.reverse,
+.flex-dir\:row-reverse { flex-direction: row-reverse; }
+.flex-dir\:column { flex-direction: column; }
+.flex-dir\:column.reverse,
+.flex-dir\:column-reverse { flex-direction: column-reverse; }
 
 
 .jc\:start { justify-content: flex-start; }
@@ -36,12 +36,13 @@
 
 
 
-.wrap { flex-wrap: wrap; }
-.nowrap { flex-wrap: nowrap; }
-.wrap-reverse { flex-wrap: wrap-reverse; }
+.flex-wrap\:wrap { flex-wrap: wrap; }
+.flex-wrap\:nowrap { flex-wrap: nowrap; }
+.flex-wrap\:wrap-reverse { flex-wrap: wrap-reverse; }
 
 // Flex Items 
 
+.flex\:0 { flex: 0; }
 .flex\:0\.1 { flex: 0.1; }
 .flex\:0\.2 { flex: 0.2; }
 .flex\:0\.3 { flex: 0.3; }
@@ -100,6 +101,7 @@
 .flex-basis\:95\% { flex-basis: 95%;}
 .flex-basis\:100\% { flex-basis: 100%;}
 
+.flex-grow\:0 { flex-grow: 0; }
 .flex-grow\:0\.1 { flex-grow: 0.1; }
 .flex-grow\:0\.2 { flex-grow: 0.2; }
 .flex-grow\:0\.3 { flex-grow: 0.3; }
@@ -121,6 +123,7 @@
 .flex-grow\:9 { flex-grow: 9; }
 .flex-grow\:10 { flex-grow: 10; }
 
+.flex-shrink\:0 { flex-shrink: 0; }
 .flex-shrink\:0\.1 { flex-shrink: 0.1; }
 .flex-shrink\:0\.2 { flex-shrink: 0.2; }
 .flex-shrink\:0\.3 { flex-shrink: 0.3; }
