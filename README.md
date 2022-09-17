@@ -1,6 +1,6 @@
 # sleeker
 
-A atomic-class CSS library, closer to css syntax
+A atomic-class CSS library, closer to CSS syntax
 
 ## status:
 This library is not stable yet. We do not recommend using it in production. Expect breaking changes before version v1.0.0
@@ -11,53 +11,110 @@ This library is not stable yet. We do not recommend using it in production. Expe
 
 import sleeker variables and atomic classes in the root of your project
 
-‍‍‍‍‍‍‍`import 'sleeker/variables.css'‍‍‍‍‍‍‍`
+‍‍‍‍‍‍‍`import 'sleeker/variables.CSS'‍‍‍‍‍‍‍`
 
-‍‍‍‍‍‍‍`‍import 'sleeker/atomic-classes.css'‍‍‍‍‍‍‍`
+‍‍‍‍‍‍‍`‍import 'sleeker/atomic-classes.CSS'‍‍‍‍‍‍‍`
 
 ## Usage
 
-sleeker classes are like css rules.
+sleeker classes are like CSS rules.
 For example, to apply ‍‍‍‍‍‍‍`‍background:red` to a button, do this:
 ‍‍‍‍‍‍‍`‍<button class="bg:red">I have red background</button>`
 
-## Classes
+## Compact CSS syntax
 
-sleeker provides a compact syntax that is close to CSS and easy to remember. 
+sleeker provides a compact syntax that is close to CSS and easy to read and remember. 
 
-** Sleeker rule of thumb: To apply a rule add that rule in class attribute. If there is compact version for the property, use compact version. **
+**Sleeker rule of thumb: To apply a rule, add that rule in class attribute in `property:value` format. If there is compact version for the property (or the value), replace property (or the value) with compact version.**
 
-### case 1 - No compact version - exactly like css
+### case 1 - No compact version - exactly like CSS
 
 for example, to get apply `overflow : hidden ; ` , add ` overflow:hidden ` to the class attribute.
 
-## case 2 - compact version for a css word
+## case 2 - compact version for a CSS word
 
-if a css word has compact version (for example `dir` is compact version of `direction`), replace css word with compact version in all hyphen separated cases.
+if a CSS word has compact version, replace CSS word with compact version in all hyphen separated cases.
+
+for example `dir` is compact version of `direction`. Then: 
 
 `direction:rtl` ---> `dir:rtl`
 
 `flex-direction:row` ---> `flex-dir:row`
 
-## case 3 - compact version for a multiple css words
+Here are some other examples
 
-Sometime (for better DX) two css word are compacted together. 
+*example 1*
+
+`size` ---> `sz`
+`inline` ---> `inl`
+`block` ---> `bl`
+`padding` ---> `pd`
+
+Then: 
+`inline-size:100%` ---> `inl-sz:100%`
+`padding-inline-start:xl` ---> `pd-inl:100%`
+`padding-block:xl` ---> `pd-bl:xl`
+
+*example 2*
+
+`width` ---> `w`
+`height` ---> `h`
+
+Then: 
+`max-width:100%` ---> `max-w:100%`
+`min-height:100%` ---> `min-h:100%`
+
+*example 3*
+
+`position` ---> `pos`
+`absolute` ---> `abs`
+`relative` ---> `rel`
+
+Then :
+`position:absolute` ---> `pos:abs`
+`position:relative` ---> `pos:abs`
+`position:sticky` ---> `pos:sticky` (Note `sticky` does not have compact version)
+
+*example 4*
+
+`object` ---> `obj`
+
+Then :
+`object-fit:cover` ---> `obj-fit:cover`
+
+
+
+## case 3 - compact version for a multiple CSS words
+
+Sometime (for better DX) two or more hyphen separated CSS word are compacted together. 
+
+For example `justify-content` is compacted to `jc`. Then:
+
+`justify-content:center` ---> `js:center`
+
+Here are some more examples:
+
+
+`align-items:flex-start` ---> `ai:flex-start`
+
+`align-content:stretch` ---> `ac:stretch`
 
 `font-weight:700` ---> `fw:700`
 
-`justify-content:center` ---> `js:center`
+`font-family:heading` ---> `ff:heading` (This class applies `font-family: var(--slk-ff-heading);`)
+
+`border-radius:l` ---> `rd:l`
 
 `background-color:red` ---> `bg:red`
 
 `border-color:blue` ---> `br:blue`
 
-`border-radius:l` ---> `rd:l`
+`outline-color:blue` ---> `outl:blue`
 
 
 ## List of classes 
 
-### sizes (t-shirt sizes)
-
+### sizes properties (t-shirt sizes)
 
  #### padding 
 
@@ -136,7 +193,7 @@ bx-shd:l
 
 bx-shd:modal
 
-### sizes (with unit)
+### sizes (with units)
 
 #### border-width 
 
@@ -156,6 +213,71 @@ outl-w:0.1em outl-w:0.2em  ... outl-w:1em
 outl-w:0.1rem outl-w:0.2rem  ... outl-w:1rem
 
 
+#### width: 
+
+w:100% w:95% ... w:5%
+
+w:min-content w:fit-content w:max-content 
+
+
+min-w:100% min-w:95% ... min-w:5%
+
+min-w:min-content min-w:fit-content min-w:max-content 
+
+
+max-w:100% max-w:95% ... max-w:5%
+
+max-w:min-content max-w:fit-content max-w:max-content 
+
+#### height: 
+
+h:100% h:95% ... h:5%
+
+h:min-content h:fit-content h:max-content 
+
+
+min-h:100% min-h:95% ... min-h:5%
+
+min-h:min-content min-h:fit-content min-h:max-content 
+
+
+max-h:100% max-h:95% ... max-h:5%
+
+max-h:min-content max-h:fit-content max-h:max-content 
+
+#### inline-size:
+
+inl-sz:100% inl-sz:95% ... inl-sz:5%
+
+inl-sz:min-content inl-sz:fit-content inl-sz:max-content 
+
+
+min-inl-sz:100% min-inl-sz:95% ... min-inl-sz:5%
+
+min-inl-sz:min-content min-inl-sz:fit-content min-inl-sz:max-content 
+
+
+max-inl-sz:100% max-inl-sz:95% ... max-inl-sz:5%
+
+max-inl-sz:min-content max-inl-sz:fit-content max-inl-sz:max-content 
+
+
+#### block-size:
+
+bl-sz:100% bl-sz:95% ... bl-sz:5%
+
+bl-sz:min-content bl-sz:fit-content bl-sz:max-content 
+
+
+min-bl-sz:100% min-bl-sz:95% ... min-bl-sz:5%
+
+min-bl-sz:min-content min-bl-sz:fit-content min-bl-sz:max-content 
+
+
+max-bl-sz:100% max-bl-sz:95% ... max-bl-sz:5%
+
+max-bl-sz:min-content max-bl-sz:fit-content max-bl-sz:max-content 
+
 #### outline-offset:
 
 outl-offset:1px outl-offset:2px  ... outl-offset:10px
@@ -167,7 +289,7 @@ outl-offset:0.1rem outl-offset:0.2rem  ... outl-offset:1rem
 
 ### colors 
 
-** we use radix colors. **
+** We use radix colors under the hood. **
 
 expect this to be changed while sleeker is not stabled if we found a better coloring system.
 radix colors have built in dark mode. each scale has 12 shades. 
@@ -264,15 +386,15 @@ flex-dir:row flex-dir:row-reverse flex-dir:column flex-dir:column-reverse
 
 #### justify-content:
 
-jc:start jc:end jc:center jc:space-between jc:space-around jc:space-evenly
+jc:start jc:end jc:flex-start jc:flex-end jc:right jc:left jc:center jc:space-between jc:space-around jc:space-evenly
 
 #### align-items:
 
-ai:start ai:end ai:center ai:baseline ai:stretch 
+ai:start ai:end ai:flex-start ai:flex-end ai:right ai:left ai:center ai:baseline ai:stretch 
 
 #### align-content:
 
-ac:start ac:end  ac:normal  ac:center ac:baseline ac:first-baseline ac:last-baseline  ac:space-between ac:space-around ac:space-evenly ac:stretch
+ac:start ac:end ac:flex-start ac:flex-end ac:right ac:left  ac:normal  ac:center ac:baseline ac:first-baseline ac:last-baseline  ac:space-between ac:space-around ac:space-evenly ac:stretch
 
 #### flex-wrap:
 

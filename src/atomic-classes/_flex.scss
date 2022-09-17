@@ -9,21 +9,37 @@
 .flex-dir\:column-reverse { flex-direction: column-reverse; }
 
 
-.jc\:start { justify-content: flex-start; }
-.jc\:end { justify-content: flex-end; }
+.jc\:flex-start { justify-content: flex-start; }
+.jc\:flex-end { justify-content: flex-end; }
+.jc\:start { justify-content: start; }
+.jc\:end { justify-content: end; }
+.jc\:right { justify-content: right; }
+.jc\:left { justify-content: left; }
+.jc\:normal { justify-content: normal; }
 .jc\:center { justify-content: center; }
 .jc\:space-between { justify-content: space-between; }
 .jc\:space-around { justify-content: space-around; }
 .jc\:space-evenly { justify-content: space-evenly; }
+.jc\:stretch { justify-content: stretch; }
 
-.ai\:start { align-items: flex-start; }
-.ai\:end { align-items: flex-end; }
+.ai\:flex-start { align-items: flex-start; }
+.ai\:flex-end { align-items: flex-end; }
+.ai\:start { align-items: start; }
+.ai\:end { align-items: end; }
+.ai\:right { align-items: right; }
+.ai\:left { align-items: left; }
 .ai\:center { align-items: center; }
 .ai\:baseline { align-items: baseline; }
+.ai\:first-baseline { align-items: first baseline; }
+.ai\:last-baseline { align-items: last baseline; }
 .ai\:stretch { align-items: stretch; }
 
-.ac\:start { align-content: flex-start; }
-.ac\:end { align-content: flex-end; }
+.ac\:flex-start { align-content: flex-start; }
+.ac\:flex-end { align-content: flex-end; }
+.ac\:start { align-content: start; }
+.ac\:end { align-content: end; }
+.ac\:right { align-content: right; }
+.ac\:left { align-content: left; }
 .ac\:normal { align-content: normal; }
 .ac\:center { align-content: center; }
 .ac\:baseline { align-content: baseline; }
