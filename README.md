@@ -53,7 +53,7 @@ Sometime (for better DX) two css word are compacted together.
 `border-radius:l` ---> `rd:l`
 
 
-## List of classes with compact version (in order of usage frequency) 
+## List of classes 
 
 ### sizes (t-shirt sizes)
 
