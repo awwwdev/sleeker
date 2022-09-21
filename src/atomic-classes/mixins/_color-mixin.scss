@@ -25,7 +25,7 @@
   'teal', 'tomato', 'violet', 'yellow';
 
   @each $color-scale in $color-scales {
-    @include create-classes-for-one-color ($class: #{$class}\:r-#{$color-scale}, $property: $property, $variable: --rdx-#{$color-scale});
+    @include create-classes-for-one-color ($class: #{$class}\:#{$color-scale}, $property: $property, $variable: --rdx-#{$color-scale});
   }
   
   $semantic-colors: 'prm', 'scnd', 'trt', 'info' , 'success' , 'warning' , 'error';
