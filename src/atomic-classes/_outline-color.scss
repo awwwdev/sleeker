@@ -1,3 +1,0 @@
-@use 'mixins/color-mixin' as color-mixins;
-
-@include color-mixins.create-classes-for-all-colors ($class: outl, $property: outline-color);
